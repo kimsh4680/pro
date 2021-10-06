@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+}
+.container button {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateX(0.5s);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+.container button:before {
+  font-family: "xeicon";
+  font-size: 30px;
+  color: #fff;
+}
+.slick-next {
+  right: 30px;
+  color: transparent;
+  font-size: 0;
+}
+.slick-next:before {
+  content: "\e940";
+  font-family: "xeicon";
+}
+
+.slick-prev {
+  left: 30px;
+  color: transparent;
+  font-size: 0;
+}
+.slick-prev::before {
+  content: "\e93d";
+  font-family: "xeicon";
+}

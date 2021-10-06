@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #move{
+         
+            border: 1px solid black;
+            color: brown;
+           
+          
+            height: 90px;
+            width: 90px;
+            text-align: center;
+            line-height: 80px;
+
+            position: relative;
+            animation-name: mov;
+            animation-duration: 3s;
+            /* left:-100px; top:0px; */
+        }
+
+      
+
+        @keyframes mov{
+            0%{ left:-100px; top:0px;background-color: aqua;} 
+            25%{ left:200px; top:0px; background-color: bisque;}
+            75%{left:100px; top: 200px;}
+            100%{ left: -100px; top:0px;}
+           
+        }
+
+        #move1{
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            transition: transform 1s;
+        }
+
+        #move1:hover{
+            transform: translate(200px,0px);
+        }
+     
+
+    </style>
+</head>
+<body>
+    <div id="move">123</div>
+
+    <div id="move1">hover</div>
+</body>
+</html>
